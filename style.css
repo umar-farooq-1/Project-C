@@ -1,0 +1,1098 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+div.logo img {
+    width: 60px;
+    border: 5px solid azure;
+    border-radius: 50px;
+}
+
+nav h1 {
+    color: azure;
+    font-size: 2.5rem;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    color: rgb(114, 110, 110);
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: azure;
+}
+
+ul li a:hover{
+    color: rgb(148, 148, 148);
+}
+
+
+.logo {
+    display: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    background-color: azure;
+
+}
+
+@media screen and (max-width: 800px) {
+    nav h1 {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        margin-top: 12px;
+        top: 1%;
+        right: 5%;
+    }
+
+    div.logo {
+        display: block;
+        position: absolute;
+        left: 5%;
+    }
+
+
+    .vv {
+        margin-top: 20px;
+    }
+
+
+    ul {
+        flex-direction: column;
+    }
+
+
+    .scndul {
+        margin-bottom: 20px;
+    }
+
+    .h-nav-resp {
+        height: 69px;
+    }
+
+
+    .v-nav-resp {
+        opacity: 0;
+    }
+
+    .navbar {
+        padding: 10px 0px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.858);
+    }
+}
+
+
+/* navbar end */
+
+
+.container1 {
+    width: 100%;
+    padding: 7rem 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(headerimage.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1-box {
+    width: 100%;
+    text-align: center;
+}
+
+.container1-box p {
+    color: azure;
+    font-weight: bold;
+    font-size: 09rem;
+}
+
+.container1-box button {
+    padding: 10px 20px;
+    margin: 20px 0px;
+    font-weight: bold;
+    color: azure;
+    background-color: transparent;
+    border: 1px solid azure;
+}
+
+@media screen and (max-width: 1050px) {
+    .container1-box p {
+        font-size: 7.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container1-box p {
+        font-size: 06rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container1-box p {
+        font-size: 3.5rem;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container1-box p {
+        font-size: 3rem;
+    }
+
+
+}
+
+/* .container end */
+
+.main-pera {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+    margin-top: 13rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container2-box {
+    width: 90%;
+    padding: 15rem 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url(backimg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container2-box-child {
+    width: 100%;
+    text-align: center;
+}
+
+.container2-box-child p.pera1 {
+    font-size: 2rem;
+    color: azure;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.container2-box-child p.pera2 {
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    color: azure;
+}
+
+.container2-box-child button {
+    margin-top: 3rem;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid azure;
+    color: azure;
+}
+
+@media screen and (max-width: 540px) {
+    .container2-box {
+        padding: 10rem 0px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .main-pera {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container2-box {
+        padding: 5rem 0px;
+    }
+}
+
+/* .contsiner2 end */
+
+.parent {
+    width: 100%;
+    padding-top: 20rem;
+}
+
+.parent-child {
+    text-align: center;
+
+}
+
+.parent-child p.pera1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: azure;
+    padding-bottom: 7px;
+}
+
+.parent-child p.pera2 {
+    color: azure;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:715px) {
+    .parent-child p.pera2 {
+        font-size: 1rem;
+    }
+
+    .parent {
+        padding-top: 6rem;
+    }
+
+    .main-pera {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .parent-child p.pera2 {
+        font-size: 1rem;
+    }
+
+    .parent-child p.pera1 {
+        font-size: 2rem;
+    }
+
+    .main-pera {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .parent-child p.pera2 {
+        font-size: 1rem;
+    }
+
+    .parent-child p.pera1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* parent end */
+
+.container3 {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container3-child {
+    width: 30%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.container3-child:hover{
+    transform: scale(1.03);
+}
+
+.container3-child button {
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid azure;
+    color: azure;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.container3-child1 button.btn {
+    padding: 10px 60px;
+    font-weight: bold;
+}
+
+.container3-child1 {
+    background-image: url(section4img1.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3-child2 {
+    background-image: url(section4img2.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container3-child3 {
+    background-image: url(section4img3.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+@media screen and (max-width:998px) {
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3-child {
+        width: 80%;
+        height: 1050px;
+    }
+
+    .container3-child1 button.btn {
+        padding: 10px 13rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3-child {
+        width: 80%;
+        height: 140vh;
+    }
+
+    .container3-child1 button.btn {
+        padding: 10px 10rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3-child {
+        width: 90%;
+        height: 130vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container3-child1 button.btn {
+        padding: 10px 3rem;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container3-child {
+        width: 90%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+
+
+
+@media screen and (max-width:490px) {
+    .container3-child {
+        width: 85%;
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}
+
+@media screen and (max-width:415px) {
+    .container3-child {
+        width: 90%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:345px) {
+    .container3-child button {
+        font-size: 9px;
+    }
+}
+
+/* .containe3 end */
+
+.parent2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 11rem;
+}
+
+.parent2 p.pera1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: azure;
+    padding-bottom: 5px;
+}
+
+.parent2 p.pera2 {
+    /* font-weight: bold; */
+    font-size: 1.7rem;
+    color: azure;
+}
+
+@media screen and (max-width:768px) {
+    .parent2 p.pera1 {
+        font-size: 2.5rem;
+    }
+
+    .parent2 {
+        padding-top: 6rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .parent2 p.pera1 {
+        font-size: 1.5rem;
+    }
+
+    .parent2 p.pera2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .parent2 p.pera1 {
+        font-size: 1.4rem;
+    }
+
+    .parent2 p.pera2 {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* .parent2 end */
+
+.container4 {
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.container4-child {
+    width: 40%;
+    height: 600px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.container4-child button {
+    background-color: transparent;
+    border: 1px solid azure;
+    color: azure;
+    padding: 10px 8rem;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.container4-child1 {
+    background-image: url(Capture5.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container4-child2 {
+    background-image: url(Capture4.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container4-child3 {
+    background-image: url(Capture0.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container4-child4 {
+    background-image: url(Capture1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container4-child5 {
+    background-image: url(Capture2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container4-child6 {
+    background-image: url(Capture3.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1496px) {
+    .container4-child button {
+        padding: 10px 12.5rem;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .container4-child button {
+        padding: 10px 9.5rem;
+    }
+}
+
+@media screen and (max-width:998px) {
+    .container4-child {
+        height: 500px;
+        width: 45%;
+    }
+
+    .container4-child button {
+        padding: 10px 8rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .container4 {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .container4-child {
+        height: 500px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .container4-child button {
+        padding: 10px 10rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container4-child {
+        height: 500px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .container4-child button {
+        padding: 10px 8.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container4-child {
+        height: 400px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .container4-child button {
+        padding: 10px 6.3rem;
+    }
+}
+
+/* .container4 end */
+
+.parent3 {
+    width: 100%;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parent3 p.pera1 {
+    color: azure;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 5px;
+}
+
+.parent3 p.pera2 {
+    color: azure;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:600px) {
+    .parent3 p.pera1 {
+        font-size: 2.3rem;
+    }
+
+    .parent3 p.pera2 {
+        color: azure;
+        font-size: 1rem;
+    }
+
+    .parent3 {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .parent3 p.pera1 {
+        font-size: 2rem;
+    }
+
+    .parent3 p.pera2 {
+        color: azure;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0px 5px;
+    }
+
+    .parent3 {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .parent3 p.pera1 {
+        font-size: 1.7rem;
+    }
+
+    .parent3 p.pera2 {
+        color: azure;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0px 3px;
+    }
+
+    .parent3 {
+        padding-top: 5rem;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .parent3 p.pera1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* parnt3 end */
+
+.container5 {
+    width: 100%;
+    padding: 3rem;
+}
+
+.container5-box {
+    display: flex;
+}
+
+.container5-box-child {
+    width: 50%;
+    height: 87vh;
+}
+
+.container-box-child1 {
+    background-image: url(bugatti2.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-box-child2 {
+    background-color: rgb(25, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 2rem;
+}
+
+.container5-box-child p.pera1 {
+    color: azure;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.container5-box-child p.pera2 {
+    color: azure;
+    font-size: 1.3rem;
+    padding-bottom: 60px;
+}
+
+.container5-box-child button {
+    padding: 10px 4rem;
+    border: 1px solid azure;
+    color: azure;
+    background-color: transparent;
+
+}
+
+@media screen and (max-width:998px) {
+    .container5-box {
+        flex-direction: column;
+    }
+
+    .container5-box-child {
+        width: 100%;
+    }
+
+    .container5-box-child2 {
+        height: 90vh;
+    }
+
+}
+
+@media screen and (max-width:615px) {
+
+    .container5 {
+        padding: 1.5rem;
+    }
+
+    .container5-box-child {
+        height: 80vh;
+    }
+
+    .container5-box-child p.pera1 {
+        font-size: 1.5rem;
+    }
+
+    .container5-box-child p.pera2 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container5-box-child {
+        height: 70vh;
+    }
+
+
+    .container5-box-child button {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .container5-box-child {
+            height: 45vh;
+        }
+    
+
+    .container5-box-child button {
+        padding: 10px 2rem;
+        font-size: 0.5rem;
+    }
+
+    .container5-box-child p.pera1 {
+        font-size: 1rem;
+    }
+
+    .container5-box-child p.pera2 {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width:395px) {
+    .container5-box-child {
+        height: 45vh;
+    }
+
+    .container5-box-child p.pera1 {
+        font-size: 0.9rem;
+    }
+
+    .container5-box-child p.pera2 {
+        font-size: 0.7rem;
+    }
+
+    .container-box-child2 {
+        padding: 0px 0.9rem;
+    }
+
+    .container5-box-child button {
+        padding: 10px 1rem;
+        font-size: 0.5rem;
+    }
+
+}
+
+/* .container5 end  */
+
+footer{
+    width: 100%;
+    background-color: aqua;
+    padding: 50px 8rem;
+    background-color: rgb(19, 19, 19);
+}
+
+footer img{
+    width: 150px;
+    border: 5px solid azure;
+    border-radius: 50%;
+}
+
+.footer-box-child li{
+    list-style: none;
+    font-size: 16px;
+    color: rgb(148, 148, 148);
+    padding-bottom: 10px;
+}
+
+.footer-box-child a{
+    text-decoration: none;
+    font-size: 16px;
+    color: azure;
+    line-height: 25px;
+}
+
+.footer-box-child a:hover{
+    color: rgb(148, 148, 148);
+}
+
+div.img{
+    padding-bottom: 40px;
+}
+
+.footer-box{
+    width: 100%;
+    display: flex;
+}
+
+.footer-box-child{
+    padding: 5px;
+}
+
+.footer-box-child1{
+    width: 25%;
+}
+
+.footer-box-child2{
+    width: 25%;
+}
+
+.footer-box-child3{
+    width: 25%;
+}
+
+.footer-box-child4{
+    width: 25%;
+}
+
+@media screen and (max-width:998px) {
+    .footer-box-child1{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .footer-box-child2{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .footer-box-child3{
+        width: 50%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .footer-box-child4{
+        width: 50%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-box{
+        flex-wrap: wrap;
+
+    }
+
+    footer{
+        padding: 50px 5rem;
+    }
+
+    div.img{
+        display: flex;
+        justify-content: start;
+    }
+
+    .footer-box-child li{
+        padding: 0px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    footer img{
+        width: 120px;
+        border: 5px solid azure;
+        border-radius: 50%;
+    }
+
+    div.img{
+        display: flex;
+        justify-content: start;
+    }
+
+    footer{
+        padding: 50px 3rem;
+    }
+
+
+    .footer-box{
+        flex-wrap: wrap;
+    }
+
+    .footer-box-child1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-box-child2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-box-child3{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .footer-box-child4{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+/* footer end */
+
+.scndfooter{
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+}
+
+.scndfooter-box{
+    width: 80%;
+     
+}
+
+.scndfooter-box h4{
+    color: azure;
+    font-weight: bolder;
+    padding: 10px 0px;
+}
+
+.scndfooter-box p{
+    color: azure;
+    padding: 10px 0px;
+}
+
+.scndfooter-box p a{
+    text-decoration: none;
+    color: azure;
+}
+
+
+.scndfooter-box hr{
+    color: azure;
+}
